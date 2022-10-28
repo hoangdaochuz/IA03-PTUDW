@@ -1,0 +1,355 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  background-color: #fbfbfb;
+  padding: 0;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.logo-link {
+  text-decoration: none;
+  color: red;
+}
+.logo-link:hover {
+  color: red;
+}
+.image-box {
+  width: 30px;
+  height: 30px;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.logo-name {
+  margin: 0;
+  font-size: 33.25px;
+  color: red;
+  margin-left: 7px;
+}
+.logo-slogan {
+  margin: 0;
+  margin-left: 24px;
+  color: #ccc;
+  padding: 5px 0px;
+}
+.header-contact {
+  color: red;
+  font-size: 22px;
+  font-weight: 600;
+}
+.header-contact:first-child {
+  margin-right: 12px;
+}
+/* Main content */
+.body {
+  background-color: #fbfbfb;
+}
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 40px; */
+  padding: 40px 40px 86px 40px;
+  border-bottom: 1px solid #ccc;
+}
+.hero-info {
+  padding-left: 0;
+  margin-top: 16px;
+  padding-right: 60px;
+}
+.hero-info-title {
+  font-size: 42.56px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.hero-info-text {
+  color: rgb(176, 176, 176);
+  margin-bottom: 24px;
+}
+.hero-control {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-control span,
+.hero-control span {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 22px;
+}
+.hero-btn {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(138, 138, 138);
+}
+.btn-active {
+  background-color: rgb(231, 156, 8);
+  color: #ca4500;
+}
+.hero-img-box {
+  width: 600px;
+  position: relative;
+}
+.icon-right-arrow,
+.icon-left-arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.icon-left-arrow {
+  left: -10px;
+}
+.icon-right-arrow {
+  right: -10px;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 20px;
+}
+/* Advantage */
+.advantages {
+  padding: 56px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.advantage-item {
+  display: flex;
+  justify-content: space-between;
+}
+.advantage-content {
+  padding-left: 20px;
+  padding-right: 56px;
+}
+.feedback-title,
+.screenshot-title,
+.feature-title,
+.advantage-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.feature-text,
+.advantage-text {
+  color: rgb(176, 176, 176);
+}
+/* Feature */
+.features {
+  padding-top: 40px;
+}
+.feature-wrapper {
+  display: flex;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.feature-desc {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.feature-list {
+  list-style: none;
+  margin-top: 40px;
+}
+.feature-item {
+  display: block;
+  padding: 10px 10px 10px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.feature-item:last-child {
+  border-bottom: none;
+}
+.feature-item-link {
+  text-decoration: none;
+  color: orange;
+}
+.feature-item-link svg {
+  color: #ccc;
+  margin-right: 10px;
+}
+/* Screenshots */
+.screenshots {
+  /* padding: 40px 40px 75px 40px; */
+  padding-top: 40px;
+  /* Neu bo container di thi bo di dong nay */
+  margin: 0 -12px;
+}
+.screenshots-wrapper {
+  padding-bottom: 75px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.screenshot-title {
+  margin-bottom: 30px;
+}
+.screen-img-item {
+  margin-bottom: 32px;
+}
+.screen-img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Feedbacks */
+.feedbacks {
+  padding: 40px 40px 0px;
+  margin: 0 -12px;
+}
+
+.feedback-content {
+  font-size: 24px;
+  color: rgb(137, 134, 134);
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 36px 30px 40px;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.feedback-content::before {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  transform: translateY(50%);
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-left: 2px solid transparent;
+  border-top: 2px solid transparent;
+  transform: rotate(45deg);
+  /* background-color: black; */
+}
+.feedback-content::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  transform: translateY(50%);
+  left: 15px;
+  width: 40px;
+  height: 2px;
+  background-color: #fbfbfb;
+}
+.feedback-customer-name {
+  padding-left: 45px;
+  font-size: 16px;
+  color: #514a4a;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+.feedback-customer-name span {
+  color: rgb(176, 176, 176);
+}
+.feedback-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+/* Footer */
+.footer {
+  padding: 0px;
+}
+.footer-content {
+  padding: 26px 20px 20px 20px;
+  background-image: url("./images/bg-footer.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  width: 100%;
+  margin: 0 0px;
+}
+
+.footer-content-title {
+  font-size: 21.28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #cecece;
+}
+.footer-content-text {
+  font-size: 16px;
+  color: #828282;
+}
+.footer-payment-tool {
+  display: flex;
+  align-items: center;
+}
+
+.footer-payment-tool-box {
+  width: 34px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-payment-tool img {
+  width: 100%;
+  object-fit: cover;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  border-top: 1px solid #ccc;
+  background-color: #222;
+}
+.footer-cpright-text {
+  margin: 0;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+.footer-cpright-text span {
+  color: #dd8c5c;
+}
+.footer-social-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+}
+.footer-social-item {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.footer-social-link svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  color: #454545;
+}
