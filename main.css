@@ -112,7 +112,10 @@ body {
   color: rgb(138, 138, 138);
 }
 .btn-active {
-  background-color: rgb(231, 156, 8);
+  /* background-color: rgb(231, 156, 8);
+  background-color: linear-gradient(rgb(231, 156, 8), rgb(183, 123, 3)); */
+  background: rgb(231, 156, 8);
+  background: linear-gradient(180deg, rgb(253, 201, 97) 0%, rgb(179, 128, 27) 100%); 
   color: #ca4500;
 }
 .hero-img-box {
@@ -243,7 +246,6 @@ body {
   content: "";
   position: absolute;
   bottom: -17px;
-  transform: translateY(50%);
   left: 20px;
   width: 30px;
   height: 30px;
